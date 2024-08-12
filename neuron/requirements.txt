@@ -1,3 +1,8 @@
 asgiref==3.8.1
 Django==5.1
+grpcio==1.65.4
+grpcio-tools==1.65.4
+protobuf==5.27.3
+setuptools==72.1.0
 sqlparse==0.5.1
+wheel==0.44.0

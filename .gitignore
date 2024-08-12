@@ -4,3 +4,5 @@
 neuron/.venv
 # Application config file
 neuron/neuron/settings.py
+# Ignoring VSCode generated files
+**/__pycache__/
