@@ -1,0 +1,28 @@
+syntax="proto3";
+
+// The greeting service definition.
+service Greeter {
+  // Sends a greeting
+  rpc SayHello (HelloRequest) returns (HelloReply) {}
+}
+
+// The request message containing the user's name.
+message HelloRequest {
+  string name = 1;
+}
+
+// The response message containing the greetings
+message HelloReply {
+  string message = 1;
+}
+
+/* Conduct to generate gRPC Code
+* Working directory: Operating in the django-app folder
+* In the django application, let's say we created an app called 'data_flow'. Therefore, to generate the gRPC code for the protocol buffer, we should work in the app directory.
+* SYNTAX : python -m grpc_tools.protoc -I./protos --python_out=./gstubs --pyi_out=./gstubs --grpc_python_out=. ./protos/hello.proto
+* Syntax derivation:
+* -I./protos :- path for the input protocol buffers
+* --python_out=./gstubs :- path definition for the generated output (*.py)
+* --pyi_out=./gstubs :- path definition for the generated output (*.pyi)
+* --grpc_python_out=. ./<filename> :- path definition for the protocol buffer (defining a specific file for generating gRPC code)
+*/
