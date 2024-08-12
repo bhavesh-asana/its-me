@@ -1,0 +1,6 @@
+# Igonring in neuron application - Django (backend service application)
+
+# Python virtual environment
+neuron/.venv
+# Application config file
+neuron/neuron/settings.py
